@@ -21,7 +21,7 @@ export default function Email({ magicLink }: { magicLink: string }) {
     <Html>
       <Head />
       <Preview>Login with this magic link 🪄</Preview>
-      <Section style={main}>
+      <Section className="bg-slate-900">
         <Container style={container}>
           <Text style={h1}>Login to Trigger.dev</Text>
           <Link

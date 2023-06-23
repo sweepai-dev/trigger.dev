@@ -25,7 +25,18 @@ export const InviteEmailSchema = z.object({
   inviteLink: z.string().url(),
 });
 
-export default function Email({
+export default function Email() {
+  return (
+    <InviteEmail
+      email={"invite"}
+      orgName={"Acme.inc"}
+      inviterEmail={"hello@acme.inc"}
+      inviteLink={"https://acme.inc"}
+    />
+  );
+}
+
+export function InviteEmail({
   orgName,
   inviterName,
   inviterEmail,
